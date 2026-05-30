@@ -1,6 +1,6 @@
-const menu = document.getElementById("menu");
-const openBtn = document.getElementById("openMenu");
-const closeBtn = document.getElementById("closeMenu");
+const menu = document.querySelector("#menu");
+const openBtn = document.querySelector("#openMenu");
+const closeBtn = document.querySelector("#closeMenu");
 
 function openMenu() {
     menu.classList.remove("opacity-0", "-translate-y-5", "pointer-events-none");

@@ -3,3 +3,10 @@
 /* @theme{
     --color-primary:#2F75FD;
 } */
+
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
