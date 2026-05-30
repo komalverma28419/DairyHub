@@ -1,17 +1,18 @@
-const menuBtn = document.getElementById("menu-btn");
-const crossBtn = document.getElementById("cross-btn")
-const mobileMenu = document.getElementById("mobile-menu");
+const menu = document.getElementById("menu");
+const openBtn = document.getElementById("openMenu");
+const closeBtn = document.getElementById("closeMenu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-      menuBtn.classList.add("hidden");     // hamburger hide
-  crossBtn.classList.remove("hidden"); 
-  });
+function openMenu() {
+    menu.classList.remove("opacity-0", "-translate-y-5", "pointer-events-none");
+    openBtn.classList.add("hidden");
+    closeBtn.classList.remove("hidden");
+}
 
+function closeMenu() {
+    menu.classList.add("opacity-0", "-translate-y-5", "pointer-events-none");
+    openBtn.classList.remove("hidden");
+    closeBtn.classList.add("hidden");
+}
 
-crossBtn.addEventListener("click", () => {
-  mobileMenu.classList.add("hidden");
-
-  crossBtn.classList.add("hidden");    // cross hide
-  menuBtn.classList.remove("hidden");  // hamburger show
-});
+openBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
