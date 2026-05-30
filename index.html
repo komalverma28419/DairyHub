@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="sticky top-0 bg-white/60">
+        <nav class="flex items-center justify-between px-4 lg:px-12 ">
+            <a href="/"><img src="src/images/logo.png" alt=""></a>
+                <div class="hidden md:flex gap-4 lg:gap-6  text-[#2F2F2F] text-sm lg:text-[16px] font-medium  items-center justify-center">
+                   <a href="" class="text-[#2F75FD]">Home</a>
+                   <a href="">About</a>
+                   <div class="flex items-center justify-center">
+                    <a href="">Platform</a>
+                    <img src="/src/images/dropdown.png" alt="">
+                   </div>
+                   <a href="">In the News</a>
+                   <a href="">Contact</a>
+                   <a href="" class="bg-[#2F75FD] text-white px-4 py-2 lg:px-6 lg:py-3  rounded-lg">REQUEST FOR THE DEMO</a>
+                </div>
+
+                <button class="md:hidden" id="menu-btn">
+                 &#9776;
+                </button>
+                <button class="hidden fixed top-4 right-40  z-50 text-4xl text-black" id="cross-btn">
+                 &times;
+                </button>
+                <div id="mobile-menu" class="hidden flex-col gap-4 px-6 pb-4 font-medium bg-white">
+                  <div class="flex flex-col">
+                    <a href="#" class="text-blue-500">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Platform</a>
+                    <a href="#">In the News</a>
+                    <a href="#">Contact</a>
+                  </div>
+
+                 <button class="bg-blue-500 text-white px-4 py-2 rounded-lg w-full">
+                    REQUEST FOR THE DEMO
+                 </button>
+                </div>
+
+
+         
+        </nav>
+    </header>
+
+    <!-- section -->
+
+     <section class="bg-[url('/src/images/bg-sec-1.png')] bg-no-repeat bg-cover h-screen">
+
+     </section>
+    
+</body>
+</html>
