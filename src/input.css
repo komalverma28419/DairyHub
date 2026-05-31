@@ -23,3 +23,7 @@
     }
   }
 }
+
+.active {
+  @apply bg-[#FF5150] text-white;
+}
