@@ -42,5 +42,19 @@ buttons.forEach((btn) => {
   });
 });
 
+const platformBtn = document.getElementById("platformBtn");
+const platformDropdown = document.getElementById("platformDropdown");
+
+// toggle dropdown
+platformBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  platformDropdown.classList.toggle("hidden");
+});
+
+// click outside close
+document.addEventListener("click", function () {
+  platformDropdown.classList.add("hidden");
+});
+
 
 

@@ -26,10 +26,25 @@
               md:pointer-events-auto transition-all duration-300 ease-in-out">
                <li><a href="" class="text-[#2F75FD]">Home</a></li>
                <li><a href="" class="hover:text-[#2F75FD]">About</a></li>
-               <li class="flex items-center gap-2">
+               <!-- <li class="flex items-center gap-2">
                    <a href="" class="hover:text-[#2F75FD]">Platform</a>
                    <img src="/src/images/dropdown.png" class="h-3">
+                </li> -->
+                <li class="relative">
+                    <button id="platformBtn"class="flex items-center justify-center gap-1 
+                       hover:text-[#2F75FD]">Platform
+                        <img src="src/images/dropdown.png" alt="">
+                    </button>
+                    <!-- Dropdown -->
+                    <ul id="platformDropdown"class="hidden absolute left-0 mt-2 w-50 bg-white
+                    rounded-md shadow-md overflow-hidden text-sm">
+                        <li class="tab-item px-4 py-2 hover:bg-[#2F75FD] cursor-pointer"data-tab="part-1">Milk delivery</li>
+                        <li class="tab-item px-4 py-2 hover:bg-[#2F75FD] cursor-pointer"data-tab="part-2">Collection Partner</li>
+                        <li class="tab-item px-4 py-2 hover:bg-[#2F75FD] cursor-pointer"data-tab="part-3">Dairy Farmer </li>
+                        <li class="tab-item px-4 py-2 hover:bg-[#2F75FD] cursor-pointer"data-tab="part-4">Milk Collection center</li>
+                    </ul>
                 </li>
+
                 <li><a href="" class="hover:text-[#2F75FD]">In the News</a></li>
                 <li><a href="" class="hover:text-[#2F75FD]">Contact</a></li>
                 <li><a href="" class="bg-[#2F75FD] text-white px-4 py-2 rounded-lg inline-block">
@@ -162,6 +177,9 @@
             <img src="/src/images/logo-3.png" alt="" class="h-8 md:h-20">
             <img src="/src/images/logo-4.png" alt="" class="h-8 md:h-20">
         </div>
+       <div class="flex items-center justify-center mt-16">
+         <a href="" class="px-9 py-3 text-white rounded-lg bg-[#2F75FD]">View More</a>
+       </div>
      </section>
 
     <!-- section-5 -->
@@ -177,21 +195,21 @@
                    hover:bg-[#FF5150] hover:text-white shadow-sm ease-in-out duration-500"
                     data-tab="part-1">Milk delivery</button>
 
-                   <button class="tab-btn border cursor-pointer border-[#FFC6C6] py-4 px-8 rounded-lg
+                   <!-- <button class="tab-btn border cursor-pointer border-[#FFC6C6] py-4 px-8 rounded-lg
                     hover:bg-[#FF5150] hover:text-white shadow-sm ease-in-out duration-500"
-                    data-tab="part-2">Delivery Customer </button>
+                    data-tab="part-2">Delivery Customer </button> -->
 
                    <button class="tab-btn border cursor-pointer border-[#FFC6C6] py-4 px-8 rounded-lg
                     hover:bg-[#FF5150] hover:text-white shadow-sm ease-in-out duration-500"
-                    data-tab="part-3">Delivery boy</button>
+                    data-tab="part-2">Delivery boy</button>
 
                    <button class="tab-btn border cursor-pointer border-[#FFC6C6] py-4 px-8 rounded-lg
                     hover:bg-[#FF5150] hover:text-white shadow-sm ease-in-out duration-500" 
-                    data-tab="part-4">Dairy Farm </button>
+                    data-tab="part-3">Dairy Farm </button>
 
                    <button class="tab-btn border cursor-pointer border-[#FFC6C6] py-4 px-8 rounded-lg
                     hover:bg-[#FF5150] hover:text-white shadow-sm transition-all ease-in-out 
-                    duration-500" data-tab="part-5">Milk Collection</button>
+                    duration-500" data-tab="part-4">Milk Collection</button>
                 </div>
 
                 <!-- content -->
@@ -222,7 +240,7 @@
                  
                  <!-- Milk delivery Customer App -->
 
-                 <div id="part-2" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
+                 <!-- <div id="part-2" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
                     <div class="max-w-xl">
                         <h4 class="text-2xl font-semibold text-[#313131]">Milk delivery Customer App</h4>
                         <p class="leading-relaxed text-base text-[#5C5C5C] my-6">Automating the daily milk collection process is the first empowering step 
@@ -245,11 +263,11 @@
                     <div class="flex items-center justify-center">
                         <img src="/src/images/sec-5-3.png" alt="">
                     </div>
-                 </div>
+                 </div> -->
 
                  <!-- Delivery boy App -->
 
-                 <div id="part-3" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
+                 <div id="part-2" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
                     <div class="max-w-xl">
                         <h4 class="text-2xl font-semibold text-[#313131]">Delivery boy App</h4>
                         <p class="leading-relaxed text-base text-[#5C5C5C] my-6">Automating the daily milk collection process is the first empowering step 
@@ -276,7 +294,7 @@
 
                  <!-- Dairy Farmer App -->
 
-                 <div id="part-4" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
+                 <div id="part-3" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
                     <div class="max-w-xl">
                         <h4 class="text-2xl font-semibold text-[#313131]">Dairy Farmer App</h4>
                         <p class="leading-relaxed text-base text-[#5C5C5C] my-6">Automating the daily milk collection process is the first empowering step 
@@ -301,7 +319,7 @@
                     </div>
                  </div>
                  <!-- Milk Collection Centre App -->
-                 <div id="part-5" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
+                 <div id="part-4" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-8">
                     <div class="max-w-xl">
                         <h4 class="text-2xl font-semibold text-[#313131]">Milk Collection Centre App</h4>
                         <p class="leading-relaxed text-base text-[#5C5C5C] my-6">Automating the daily milk collection process is the first empowering step 
@@ -326,9 +344,16 @@
                     </div>
 
                  </div>
+
             </div>
             
         
+     </section>
+
+     <!-- section-6 -->
+
+     <section>
+        <div></div>
      </section>
 </body>
 </html>
