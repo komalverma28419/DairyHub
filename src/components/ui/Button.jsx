@@ -1,21 +1,3 @@
-// import React from 'react'
-
-// const Button = ({
-//     text,onCLick,type="button", className ="" ,bgColor = "bg-[#2F75FD]"
-// }) => {
-
-//   return (
-//     <button 
-//     type={type}
-//     onClick={onCLick} className={`py-2  xl:py-3 px-8 lg:px-10 rounded transition duration-200 
-//     font-semibold cursor-pointer text-white hover:opacity-90 ${bgColor} ${className}`}>
-//         {text}
-//     </button>
-//   )
-// }
-
-// export default Button
-
 
 const Button = ({
   text,
