@@ -1,7 +1,7 @@
-import milkDelivery from './../assets/images/milkDelivery.png'
-import deliveryBoy from './../assets/images/deliveryBoy.png'
-import dairyFarm from './../assets/images/dairyFarm.png'
-import milkCollection from './../assets/images/milkCollection.png'
+import milkDelivery from '../assets/images/milkDelivery.png'
+import deliveryBoy from '../assets/images/deliveryBoy.png'
+import dairyFarm from '../assets/images/dairyFarm.png'
+import milkCollection from '../assets/images/milkCollection.png'
 import appStore from '../assets/images/appStore.png'
 import playStore from '../assets/images/playStore.png'
 
