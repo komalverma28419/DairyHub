@@ -4,6 +4,7 @@ import Toggle from '../ui/Toggle'
 import PricingCard from '../ui/PricingCard';
 import { pricingPlans } from '../../data/pricingData';
 import offerIndicator from "../../assets/images/offerIndicator.png"
+import discountIndicator from '../../assets/images/discountIndicator.png'
 
 
 
@@ -14,7 +15,8 @@ const Pricing = () => {
       <div className='relative flex flex-col gap-8 mb-16 lg:mb-20'>
         <Title text='Choose Your Plan' textAlign='center' lineAlign='center' lineWidth='w-32'/>
         <Toggle isYearly={isYearly} setIsYearly={setIsYearly}/>
-        <img src={offerIndicator} alt="offerIndicator" className='absolute left-[80%] sm:left-[68%] md:left-[60%] mt-18 w-18 md:w-22'/>
+        <img src={isYearly ? discountIndicator : offerIndicator} alt="offerIndicator" 
+        className='absolute  left-[58%] mt-18 w-auto h-auto scale-75 md:scale-105" '/>
       </div>
       <div className="grid md:grid-cols-3 gap-10 mt-10">
         {pricingPlans.map((plan) => (

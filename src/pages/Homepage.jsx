@@ -6,6 +6,7 @@ import News from '../components/home/News'
 import Brand from '../components/home/Brand'
 import Achievement from '../components/home/Achievement'
 import Pricing from '../components/home/Pricing'
+import Features from '../components/home/Features'
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Brand/>
       <Achievement/>
       <Pricing/>
+      <Features/>
     </>
   )
 }
