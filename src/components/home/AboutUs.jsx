@@ -4,7 +4,7 @@ import Title from '../ui/Title'
 
 const AboutUs = () => {
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20'>
+    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FCFCFC]'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         <div className='flex items-center'>
             <img src={aboutImage} alt="about-image" />

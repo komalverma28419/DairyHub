@@ -7,3 +7,21 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 1s  infinite;
+}
+
+.dropdown  {
+  filter: invert(32%) sepia(72%) saturate(2975%) hue-rotate(340deg) brightness(95%) contrast(95%);
+}

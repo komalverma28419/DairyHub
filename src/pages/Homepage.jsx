@@ -7,6 +7,8 @@ import Brand from '../components/home/Brand'
 import Achievement from '../components/home/Achievement'
 import Pricing from '../components/home/Pricing'
 import Features from '../components/home/Features'
+import MeetClients from '../components/home/MeetClient'
+import FrequentlyAsk from '../components/home/FrequentlyAsk'
 
 const Homepage = () => {
   return (
@@ -19,6 +21,8 @@ const Homepage = () => {
       <Achievement/>
       <Pricing/>
       <Features/>
+      <MeetClients/>
+      <FrequentlyAsk/>
     </>
   )
 }
