@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutTeam from "../../assets/images/aboutTeam.png"
+import AboutTeam from "../../assets/images/AboutTeam.png"
 import Title from '../ui/Title'
 
 const OurTeam = () => {
@@ -7,7 +7,7 @@ const OurTeam = () => {
     <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FFFBFB]'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         <div className='max-w-lg'>
-            <img src={aboutTeam} alt="team-image" className='w-full'/>
+            <img src={AboutTeam} alt="team-image" className='w-full'/>
         </div>
         <div>
             <Title text="Our Team"/>
