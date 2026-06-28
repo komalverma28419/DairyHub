@@ -1,6 +1,6 @@
 export const navItems = [
      { name: "Home", path: "/" },
-     { name: "About", path: "/about" },
+     { name: "About", path: "/about-us" },
      { name: "Platform", type: "dropdown" },
      { name: "News", path: "/news" },
      { name: "Contact", path: "/contact" }

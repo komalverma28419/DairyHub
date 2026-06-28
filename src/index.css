@@ -8,6 +8,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+@theme{
+  --color-dark: #313131;
+  --color-font: #5C5C5C;
+  --color-secondary: #2C8351;
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
