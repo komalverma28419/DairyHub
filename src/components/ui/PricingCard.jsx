@@ -35,7 +35,7 @@ const PricingCard = ({plan, isYearly}) => {
         {features.map((feature, index) =>{
             const isAvailable = plan.permissions[index]
             return(
-                <li className='flex items-center gap-2 lg:gap-4 '>
+                <li key={index} className='flex items-center gap-2 lg:gap-4 '>
                     <div className='lg:w-8 lg:h-8 w-7 h-7 rounded-full bg-[#FFF2F1] flex items-center justify-center shrink-0'>
                         <img src={isAvailable ? checkIcon : closeIconList} alt="icon" className='shrink-0'/>
                     </div>

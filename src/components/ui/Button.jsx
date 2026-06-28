@@ -5,7 +5,8 @@ const Button = ({
   type = "button",
   variant = "primary",
   size = "md",
-  className = ""
+  className = "",
+   children,
 }) => {
   
   const baseStyle =
@@ -21,7 +22,7 @@ const Button = ({
   const sizes = {
     sm: "px-6 py-3 ",
     md: "px-8 py-3",
-    lg: "px-10 py-4 "
+    lg: "px-14 py-4 "
   }
 
   return (
@@ -30,7 +31,7 @@ const Button = ({
       onClick={onClick}
       className={`${baseStyle} ${variants[variant]} ${sizes[size]} ${className}`}
     >
-      {text}
+      {children || text}
     </button>
   )
 }

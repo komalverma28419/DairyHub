@@ -9,6 +9,9 @@ import Pricing from '../components/home/Pricing'
 import Features from '../components/home/Features'
 import MeetClients from '../components/home/MeetClient'
 import FrequentlyAsk from '../components/home/FrequentlyAsk'
+import Testimonial from '../components/home/Testimonial'
+import NewsLetter from '../components/home/NewsLetter'
+import GetInTouch from '../components/home/GetInTouch'
 
 const Homepage = () => {
   return (
@@ -23,6 +26,9 @@ const Homepage = () => {
       <Features/>
       <MeetClients/>
       <FrequentlyAsk/>
+      <Testimonial/>
+      <NewsLetter/>
+      <GetInTouch/>
     </>
   )
 }

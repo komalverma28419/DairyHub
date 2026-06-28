@@ -20,13 +20,17 @@ const News = () => {
 
         <Title text='Featured In' textAlign='center' lineAlign='center' lineWidth='w-24'/>
 
-        <div className='flex gap-32 w-max animate-scroll my-16'>
+        <div className='flex w-max my-16 animate-scroll'>
           {logos.map((logo, index) =>(
-            <img src={logo} key={index} alt='logo' className=''/>
+            <img src={logo} key={index} alt='logo' className='h-8 md:h-14 lg:h-18 w-auto object-contain mx-16'/>
           ))}
 
           {logos.map((logo, index) =>(
-            <img src={logo} key={index} alt='logo' className=''/>
+            <img src={logo} key={index} alt='logo' className='h-8 md:h-14 lg:h-18 w-auto object-contain mx-16'/>
+          ))}
+
+          {logos.map((logo, index) =>(
+            <img src={logo} key={index} alt='logo' className=' h-8 md:h-14 lg:h-18 w-auto object-contain mx-16'/>
           ))}
         </div>
         <Button text="View More" className='mx-auto block'/>

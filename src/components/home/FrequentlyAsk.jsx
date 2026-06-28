@@ -11,7 +11,7 @@ const FrequentlyAsk = () => {
   return (
     <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 flex flex-col items-center'>
       <Title text="FAQ’s" textAlign='center' lineAlign='center'/>
-      <div className='w-3xl'>
+      <div className='w-full max-w-3xl mt-8'>
         {faqs.map((item,index) =>(
           <div key={index} className='border-b border-[#D9D9D9]'>
             <button onClick={() => handleToggle(index)}
@@ -25,7 +25,7 @@ const FrequentlyAsk = () => {
                     ${activeIndex === index ? "rotate-180" : ""}`}/>                  
               </div>
             </button>
-            <div  className={`text-sm text-[#606060] overflow-hidden transition-all duration-300 ease-in-out
+            <div  className={`text-sm text-[#606060] transition-all duration-300 ease-in-out
              ${activeIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
                   <p className='pl-6 pr-10 pb-6'>{item.answer}</p>
             </div>     
