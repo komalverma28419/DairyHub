@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from './../assets/images/logo.png'
-import dropdown from './../assets/images/dropdown.png'
+import dropdown from './../assets/images/dropdown.svg'
 import { navItems, platformItems } from '../data/navconfig'
 import menuIcon from '../assets/images/menuIcon.png'
 import Button from './ui/Button'
@@ -35,29 +35,35 @@ const Navbar = () => {
                 navItems.map((item) =>{
                     if (item.type === "dropdown"){
                         return(
-                            <div key={item.name} className='relative ' ref={dropdownRef}>
-                                <button onClick={() => setIsOpen(!isOpen)} className='flex items-center 
-                                gap-1.5 cursor-pointer bg-transparent border-0 py-2'>
-                                    {item.name}
+                            <div  className="relative" ref={dropdownRef}>
+                                <div className='flex items-center gap-1'>
+                                    <NavLink to="/platform" end className={({ isActive }) =>
+                                    isActive ? "text-primary font-semibold py-2" : "py-2"}>
+                                        {item.name}
+                                    </NavLink>
+                                    <button onClick={() => setIsOpen(!isOpen)} className='flex items-center 
+                                     gap-1.5 cursor-pointer bg-transparent border-0 py-2 '>
                                     <img src={dropdown} alt="dropdown" className={`transition-transform 
                                     duration-200 ${isOpen ?"rotate-180" : ""}`}/>
                                 </button>
+                                </div>
+
                                 {isOpen && (
                                     <div className='absolute flex flex-col top-full left-0 mt-5 w-47
                                     bg-white font-normal rounded-md shadow-md gap-0.5'>
                                         {platformItems.map((p) =>(
-                                            <NavLink key={p.name} to={p.path} className='w-full px-4 py-2 
-                                            flex items-start hover:bg-[#2F75FD] hover:text-white'>
+                                            <NavLink key={p.name} to={p.path} className={({isActive}) => `w-full px-4 py-2 
+                                            flex items-start hover:bg-primary hover:text-white ${isActive ? "bg-primary text-white" : ""}`}>
                                                 {p.name}
                                             </NavLink>
                                         ))}
                                     </div>
                                 )}
-                            </div>
+                                </div>
                         )}
                     return(
                         <NavLink key={item.name} to={item.path} className={({isActive}) => isActive ? 
-                        "text-[#2F75FD] font-semibold" :""}>{item.name}</NavLink>
+                        "text-primary font-semibold" :""}>{item.name}</NavLink>
                     )
                 })}
                 <Button text="REQUEST FOR THE DEMO" size='sm'/>

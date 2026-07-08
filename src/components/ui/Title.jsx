@@ -9,7 +9,7 @@ const Title = ({
     const textAlignClass = textAlign === "center" ? "text-center" :"text-left"
     const lineAlignClass = lineAlign === "center" ? "left-1/2 -translate-x-1/2" : "left-0"
   return (
-    <h2 className={`relative text-2xl md:text-3xl font-bold text-[#313131] ${textAlignClass}`}>
+    <h2 className={`relative text-2xl md:text-3xl font-bold text-dark ${textAlignClass}`}>
       {text}
       <span className={`absolute bg-[#DE3E38] h-1 rounded-sm ${lineWidth} ${position} 
       ${lineAlignClass}`}/>

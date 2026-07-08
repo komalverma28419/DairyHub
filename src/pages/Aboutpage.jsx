@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutHero from '../components/about/AboutHero'
-import OurTeam from '../components/about/OurTeam'
+import OurTeam from '../components/shared/OurTeam'
 import MeetClients from '../components/shared/MeetClient'
 import News from '../components/shared/News'
 import OurFounder from '../components/about/OurFounder'
@@ -12,7 +12,7 @@ const Aboutpage = () => {
   return (
     <>
       <AboutHero/>
-      <OurTeam/>
+      <OurTeam title="Our Team"/>
       <OurFounder/>
       <MeetClients/> 
       <News/>
