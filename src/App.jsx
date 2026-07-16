@@ -7,6 +7,7 @@ import Aboutpage from './pages/Aboutpage'
 import PlatformPage from './pages/PlatformPage'
 import BlogPage from './pages/BlogPage'
 import ContactPage from './pages/ContactPage'
+import BlogDetailPage from './pages/BlogDetailPage'
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='collection-centre' element={<PlatformPage/>}/>
       </Route>
       <Route path='/blogs' element={<BlogPage/>}/>
+      <Route path='/blogs/:slug' element={<BlogDetailPage/>}/>
       <Route path='/contact' element={<ContactPage/>}/>
     </Routes>
     <Footer/>

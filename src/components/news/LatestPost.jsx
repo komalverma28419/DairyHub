@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import PageHero from '../shared/PageHero'
 import Title from '../ui/Title'
 import blogs from '../../data/blog'
 import BlogCard from '../ui/BlogCard'
-import Pagination from './Pagination'
+import Pagination from '../ui/Pagination'
 
 const LatestPost = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,7 +27,7 @@ const LatestPost = () => {
         ))}
       </div>
       <div className="mt-16 flex justify-center">
-          <Pagination 
+          <Pagination
            currentPage={currentPage}
            totalPages={totalPages}
            onPageChange={setCurrentPage}
