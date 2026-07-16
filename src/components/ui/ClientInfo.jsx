@@ -8,7 +8,7 @@ const ClientInfo = ({client, next, prev,activeBtn}) => {
     <div className='mt-10'>
       {/* <p '>{client.description}</p> */}
       {client.description.map((item, index) =>(
-        <p key={index} className="font-medium text-gray-700 text-base mb-4">
+        <p key={index} className="font-medium text-gray-700 text-[15px] mb-4">
             {item}
         </p>
       ))}

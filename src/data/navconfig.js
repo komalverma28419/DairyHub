@@ -2,7 +2,7 @@ export const navItems = [
      { name: "Home", path: "/" },
      { name: "About", path: "/about-us" },
      { name: "Platform", path: "/platform", type: "dropdown"},
-     { name: "News", path: "/news" },
+     { name: "In the News", path: "/blogs" },
      { name: "Contact", path: "/contact" }
     ]
 export const platformItems = [

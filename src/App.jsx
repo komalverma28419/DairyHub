@@ -5,6 +5,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Aboutpage from './pages/Aboutpage'
 import PlatformPage from './pages/PlatformPage'
+import BlogPage from './pages/BlogPage'
+import ContactPage from './pages/ContactPage'
+
 
 
 const App = () => {
@@ -20,6 +23,8 @@ const App = () => {
           <Route path='dairy-farmer' element={<PlatformPage/>}/>
           <Route path='collection-centre' element={<PlatformPage/>}/>
       </Route>
+      <Route path='/blogs' element={<BlogPage/>}/>
+      <Route path='/contact' element={<ContactPage/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
