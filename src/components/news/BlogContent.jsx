@@ -1,4 +1,4 @@
-import ShareButtons from "./ShareButtons";
+import ShareButtons from "../shared/ShareButtons";
 
 const BlogContent = ({ blog, detail }) => {
 
@@ -101,16 +101,10 @@ const BlogContent = ({ blog, detail }) => {
 
 
   return (
-    <article className="w-full">
-
-      {/* Category */}
-      <span className="inline-block bg-green-100 text-green-700 text-sm font-medium px-4 py-2 rounded-full mb-5">
-        {blog.category}
-      </span>
-
+    <article className="w-full ">
 
       {/* Title */}
-      <h1 className="text-4xl lg:text-5xl font-bold text-[#121212] leading-tight mb-6">
+      <h1 className="text-3xl lg:text-4xl font-bold text-[#121212] leading-tight mb-6">
         {blog.title}
       </h1>
 
@@ -143,7 +137,7 @@ const BlogContent = ({ blog, detail }) => {
       <img
         src={blog.image}
         alt={blog.title}
-        className="rounded-3xl w-full h-[450px] object-cover mb-10"
+        className="rounded-3xl w-full object-cover mb-10"
       />
 
 
@@ -155,22 +149,11 @@ const BlogContent = ({ blog, detail }) => {
       </div>
 
 
-      {/* Tags */}
-      <div className="mt-12 flex flex-wrap gap-3">
-        {detail.tags?.map((tag) => (
-          <span
-            key={tag}
-            className="px-4 py-2 rounded-full bg-gray-100 text-gray-700 text-sm"
-          >
-            #{tag}
-          </span>
-        ))}
-      </div>
-
-
       {/* Share */}
-      <div className="mt-12 border-t pt-8">
-        <ShareButtons />
+      <div className="mt-12 pt-8 flex items-center justify-center">
+        <hr className="flex-1 text-primary"/>
+        <ShareButtons items={["Facebook", "Twitter", "Instagram"]}/>
+        <hr className="flex-1 text-primary" />
       </div>
 
     </article>

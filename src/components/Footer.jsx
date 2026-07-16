@@ -2,17 +2,12 @@ import React from 'react'
 import logo from "../assets/images/logo.png"
 import {NavLink } from 'react-router-dom'
 import { MdLocationOn, MdEmail, MdPhone } from 'react-icons/md'
-import { FaFacebook,FaYoutube,FaInstagram, FaTwitter } from 'react-icons/fa'
+import ShareButtons from './shared/ShareButtons'
 
 
 const Footer = () => {
 
-  const socialLinks = [
-  { name: "Facebook", icon: FaFacebook, url: "#" },
-  { name: "Twitter", icon: FaTwitter, url: "#" },
-  { name: "YouTube", icon: FaYoutube, url: "#" },
-  { name: "Instagram", icon: FaInstagram, url: "#" },
-]
+ 
 
   return (
     <footer className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FCFCFC]'>
@@ -65,16 +60,7 @@ const Footer = () => {
       
       <div className='flex items-center justify-between lg:mt-12 text-sm lg:text-base'>
         <p className='text-gray-600 '>@ 2026 Company Name, Inc. All rights reserved.</p>
-
-        <div className='flex gap-4 text-lg lg:text-2xl'>
-          {socialLinks.map((item) => (
-            <a key={item.name} href={item.url} className='w-7 h-7 lg:w-9 lg:h-9 rounded-lg bg-[#DFEAFF] flex
-             items-center justify-center transition-all duration-200 group hover:bg-[#b4c8ec]'>
-              <item.icon className='text-[#2F75FD]'/>
-            </a>
-          ))}
-        </div>
-
+       <ShareButtons/>
       </div>
       </div>
     </footer>

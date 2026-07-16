@@ -27,12 +27,8 @@ const RelatedPosts = ({ currentSlug, currentCategory }) => {
         <div>
 
           <p className="text-primary font-medium mb-2">
-            Related Articles
+             See Related Posts
           </p>
-
-          <h2 className="text-3xl lg:text-4xl font-bold">
-            You May Also Like
-          </h2>
 
         </div>
 
