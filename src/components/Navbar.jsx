@@ -160,7 +160,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </NavLink>
 
-        <div className="hidden md:flex items-center gap-4 lg:gap-5 xl:gap-6 font-medium text-[15px]">
+        <div className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-6 font-medium text-[15px]">
 
           {navItems.map((item) => {
             if (item.type === "dropdown") {
