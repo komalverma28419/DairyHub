@@ -6,8 +6,14 @@ import ShareButtons from './shared/ShareButtons'
 
 
 const Footer = () => {
+  const footerLink = [
+   { name: "About Us", path: "/about-us"},
+   { name: "Platform", path: "/platform"},
+   { name: "Blog", path: "/blogs"},
+   { name: "Contact", path: "/contact"},
 
- 
+  ]
+  const activeClass = ({isActive}) => `${isActive ? "text-primary" : "text-gray-700 hover:text-primary"}`
 
   return (
     <footer className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FCFCFC]'>
@@ -21,16 +27,15 @@ const Footer = () => {
 
         <div className='flex flex-col font-medium gap-3 ml-0 md:ml-10 mt-4'>
           <h4 className="text-lg lg:text-xl font-semibold text-[#313131] mb-4">Company</h4>
-          <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/platform">Platform</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          {footerLink.map((item) =>(
+            <NavLink key={item.name} to = {item.path} className={activeClass}>{item.name}</NavLink>
+          ))}
         </div>
 
         <div className='flex flex-col font-medium gap-3 mt-4'>
           <h4 className='text-lg lg:text-xl font-semibold text-[#313131] mb-4'>Support</h4>
-          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-          <NavLink to="/terms-and-condition">Terms & Condition</NavLink>
+          <NavLink to="/privacy-policy" className={activeClass}>Privacy Policy</NavLink>
+          <NavLink to="/terms-and-conditions" className={activeClass}>Terms & Condition</NavLink>
         </div>
 
         <div className='flex flex-col font-medium gap-3 mt-4'>

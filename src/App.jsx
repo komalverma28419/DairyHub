@@ -8,6 +8,8 @@ import PlatformPage from './pages/PlatformPage'
 import BlogPage from './pages/BlogPage'
 import ContactPage from './pages/ContactPage'
 import BlogDetailPage from './pages/BlogDetailPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import TermsAndConditionPage from './pages/TermsAndConditionPage'
 
 
 
@@ -27,6 +29,8 @@ const App = () => {
       <Route path='/blogs' element={<BlogPage/>}/>
       <Route path='/blogs/:slug' element={<BlogDetailPage/>}/>
       <Route path='/contact' element={<ContactPage/>}/>
+      <Route path='/privacy-policy' element={<PrivacyPolicyPage/>}/>
+      <Route path='/terms-and-conditions' element={<TermsAndConditionPage/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
