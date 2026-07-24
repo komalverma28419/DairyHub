@@ -9,7 +9,7 @@ const FrequentlyAsk = () => {
     setActiveIndex(activeIndex === index ? null : index)
   }
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 flex flex-col items-center'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 flex flex-col items-center'>
       <Title text="FAQ’s" textAlign='center' lineAlign='center'/>
       <div className='w-full max-w-3xl mt-8'>
         {faqs.map((item,index) =>(

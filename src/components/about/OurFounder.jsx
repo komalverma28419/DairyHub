@@ -11,7 +11,7 @@ const pluses = [
   "bottom-12 left-5 text-[#FF5150]",
 ]
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-no-repeat bg-cover'
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-no-repeat bg-cover'
      style={{backgroundImage: `url(${founderBg})`}}>
       <div className='relative grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-10 justify-items-end'>
         <div>

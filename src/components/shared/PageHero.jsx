@@ -4,7 +4,7 @@ import platformImg2 from "../../assets/images/platformImg2.png"
 
 const PageHero = ({children, description}) => {
   return (
-    <section className='relative overflow-hidden py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#F9FBFF] h-full'>
+    <section className='max-w-7xl mx-auto relative overflow-hidden py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#F9FBFF] h-full'>
         <div className='text-center '>
             <h1 className='font-bold text-[32px]'>
                 {children}

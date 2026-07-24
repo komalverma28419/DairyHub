@@ -26,7 +26,7 @@ const prev = () => {
   setActiveBtn("prev");
 }
   return (
-    <section className="py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FBFDFF]">
+    <section className="max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FBFDFF]">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-20 p-10">
       <ClientMap client={client} />
 

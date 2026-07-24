@@ -7,7 +7,7 @@ const BlogContent = ({ blog, detail }) => {
       <div className="py-20 text-center text-gray-500">
         Loading blog...
       </div>
-    );
+    )
   }
 
   const renderContent = (item, index) => {
@@ -36,8 +36,7 @@ const BlogContent = ({ blog, detail }) => {
         return (
           <div
             key={index}
-            className="my-10 border-l-4 border-[#1D976C] bg-[#F8FDFC] px-6 py-5 rounded-r-xl"
-          >
+            className="my-10 border-l-4 border-[#1D976C] bg-[#F8FDFC] px-6 py-5 rounded-r-xl">
             <p className="italic text-lg font-medium text-[#1D976C]">
               "{item.text}"
             </p>
@@ -46,16 +45,13 @@ const BlogContent = ({ blog, detail }) => {
 
       case "list":
         return (
-          <ul
-            key={index}
-            className="list-disc pl-6 space-y-3 text-[#4F4F4F] mb-8"
-          >
+          <ul key={index}
+            className="list-disc pl-6 space-y-3 text-[#4F4F4F] mb-8">
             {item.items.map((listItem, i) => (
               <li key={i}>{listItem}</li>
             ))}
           </ul>
-        );
-
+        )
       case "table":
         return (
           <div key={index} className="overflow-x-auto my-10">
@@ -92,64 +88,41 @@ const BlogContent = ({ blog, detail }) => {
               </tbody>
             </table>
           </div>
-        );
-
+        )
       default:
         return null;
     }
-  };
+  }
 
 
   return (
-    <article className="w-full ">
-
-      {/* Title */}
+    <article className="w-full">
       <h1 className="text-3xl lg:text-4xl font-bold text-[#121212] leading-tight mb-6">
         {blog.title}
       </h1>
 
-
-      {/* Author */}
       <div className="flex items-center gap-4 mb-10">
-
-        <img
-          src={blog.author.image}
-          alt={blog.author.name}
-          className="w-14 h-14 rounded-full object-cover"
-        />
-
+        <img src={blog.author.image} alt={blog.author.name} className="w-14 h-14 rounded-full 
+        object-cover"/>
         <div>
-          <h4 className="font-semibold text-[#121212]">
-            {blog.author.name}
-          </h4>
-
+          <h4 className="font-semibold text-[#121212]">{blog.author.name}</h4>
           <div className="flex gap-4 text-sm text-gray-500 mt-1">
             <span>{blog.date}</span>
             <span>•</span>
             <span>{detail.readTime}</span>
           </div>
         </div>
-
+        
       </div>
 
 
-      {/* Hero Image */}
-      <img
-        src={blog.image}
-        alt={blog.title}
-        className="rounded-3xl w-full object-cover mb-10"
-      />
-
-
-      {/* Blog Content */}
+      <img src={blog.image} alt={blog.title} className="rounded-3xl w-full object-cover mb-10"/>
       <div>
         {detail.content?.map((item, index) =>
           renderContent(item, index)
         )}
       </div>
 
-
-      {/* Share */}
       <div className="mt-12 pt-8 flex items-center justify-center">
         <hr className="flex-1 text-primary"/>
         <ShareButtons items={["Facebook", "Twitter", "Instagram"]}/>
@@ -157,7 +130,7 @@ const BlogContent = ({ blog, detail }) => {
       </div>
 
     </article>
-  );
-};
+  )
+}
 
 export default BlogContent;

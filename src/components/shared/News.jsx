@@ -15,7 +15,7 @@ const News = () => {
     logo_4
   ]
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 overflow-hidden'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 overflow-hidden'>
       <div className='relative'>
 
         <Title text='Featured In' textAlign='center' lineAlign='center' lineWidth='w-24'/>

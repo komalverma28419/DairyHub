@@ -20,7 +20,7 @@ const RelatedPosts = ({ currentSlug, currentCategory }) => {
     relatedBlogs.length >= 3 ? relatedBlogs : fallbackBlogs;
 
   return (
-    <section className="mt-20">
+    <section className="max-w-7xl mx-auto mt-20">
 
       <div className="flex items-center justify-between mb-10">
 

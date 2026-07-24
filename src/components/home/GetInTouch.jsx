@@ -9,7 +9,7 @@ const GetInTouch = () => {
     e.preventDefault()
   }
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         <div className='flex items-center justify-center md:justify-start'>
             <img src={getTouch} alt="get in touch" className=''/>

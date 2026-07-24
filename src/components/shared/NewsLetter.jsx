@@ -8,7 +8,7 @@ const NewsLetter = () => {
     // console.log(email)
   }
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-linear-to-r from-[#FF7570] to-[#EB4D45]'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-linear-to-r from-[#FF7570] to-[#EB4D45]'>
       <div className="flex flex-col items-center justify-center text-center space-y-2">
             <h1 className="md:text-4xl text-white text-2xl font-extrabold">Subscribe To Newsletter</h1>
             <p className="md:text-lg text-white pb-8">

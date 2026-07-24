@@ -5,7 +5,7 @@ import Button from '../ui/Button'
 
 const Hero = () => {
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-cover bg-center bg-no-repeat 
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-cover bg-center bg-no-repeat 
     min-h-[70vh] lg:min-h-screen' style={{backgroundImage: `url(${BgImg})`}}>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-10'>
         <div className='max-w-lg flex flex-col items-start '>

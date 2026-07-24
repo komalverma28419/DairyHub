@@ -15,7 +15,7 @@ const Benefits = () => {
     "24/7 Support"
   ]
   return (
-    <section className='relative py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FEF8F8CC]'>
+    <section className='max-w-7xl mx-auto relative py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FEF8F8CC]'>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-10'>
         <div className='lg:col-span-6'>
             <Title text='Benefits of SaaS Solution'/>

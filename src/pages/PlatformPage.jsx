@@ -6,11 +6,13 @@ import OurApplications from '../components/platform/OurApplications'
 import OurTeam from '../components/shared/OurTeam'
 import News from '../components/shared/News'
 import NewsLetter from '../components/shared/NewsLetter'
+import ScrollToHash from '../components/ui/ScrollToHash'
 
 
 const PlatformPage = () => {
   return (
-    <div>
+    <>
+      <ScrollToHash/>
       <Outlet/>
       <PageHero description={<>Fully Customized Mobile App Solutions For <br /> Your Business</>}>
          <span className='text-dark'>Our </span>
@@ -21,7 +23,7 @@ const PlatformPage = () => {
       <OurTeam title="Our Team Members"/>
       <News/>
       <NewsLetter/>
-    </div>
+    </>
   )
 }
 

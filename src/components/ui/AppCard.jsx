@@ -4,9 +4,11 @@ import Button from '../ui/Button'
 import appStore from '../../assets/images/appStore.png'
 import playStore from '../../assets/images/playStore.png'
 
-const AppCard = ({title, description, image, bgColor}) => {
+const AppCard = ({title, description, image, bgColor, slug}) => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 rounded-4xl border border-[#C4C4C4] py-8 px-10'>
+    <div 
+    id = {slug}
+    className='grid grid-cols-1 lg:grid-cols-2 gap-10 rounded-4xl border border-[#C4C4C4] py-8 px-10 scroll-mt-24'>
         {/* left-content */}
         <div className=''>
             <Title text={title}/>

@@ -7,7 +7,7 @@ const Brand = () => {
     const[activeTab , setActiveTab] = useState(brandData[0])
     console.log("active tab:" ,activeTab)
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FEF9F9]'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FEF9F9]'>
         <div>
             <Title text='Brands That Trust Us'/>
             <div className='flex gap-6 lg:gap-10 flex-wrap mt-8 mb-10'>

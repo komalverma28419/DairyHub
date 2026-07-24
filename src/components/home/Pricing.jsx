@@ -11,7 +11,7 @@ import discountIndicator from '../../assets/images/discountIndicator.png'
 const Pricing = () => {
     const [isYearly, setIsYearly] = useState(false)
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FBFBFB]'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 bg-[#FBFBFB]'>
       <div className='relative flex flex-col gap-8 mb-16 lg:mb-20'>
         <Title text='Choose Your Plan' textAlign='center' lineAlign='center' lineWidth='w-32'/>
         <Toggle isYearly={isYearly} setIsYearly={setIsYearly}/>

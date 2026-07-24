@@ -16,7 +16,7 @@ const LatestPost = () => {
 
   return (
   
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20'>
       <Title text="Latest Posts"/>
       <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-14'>
         {currentBlogs.map((blog) =>(

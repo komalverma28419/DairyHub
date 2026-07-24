@@ -5,7 +5,7 @@ import { apps } from '../../data/appdata'
 
 const OurApplications = () => {
   return (
-    <section className='py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 space-y-32'>
+    <section className='max-w-7xl mx-auto py-12 md:py-16 px-6 md:px-10 lg:px-16 xl:px-20 space-y-32'>
         <Title text="Let's have a Visit at our recently developed Applications" lineAlign='center' textAlign='center' lineWidth='w-60'/>
 
         {apps.map((app) =>
@@ -15,6 +15,7 @@ const OurApplications = () => {
                description={app.description}
                image={app.image}
                bgColor={app.bgColor}
+               slug = {app.slug}
             />)
             )}
     </section>
