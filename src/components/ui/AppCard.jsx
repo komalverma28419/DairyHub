@@ -3,6 +3,7 @@ import Title from './Title'
 import Button from '../ui/Button'
 import appStore from '../../assets/images/appStore.png'
 import playStore from '../../assets/images/playStore.png'
+import { Link } from 'react-router-dom'
 
 const AppCard = ({title, description, image, bgColor, slug}) => {
   return (
@@ -15,7 +16,7 @@ const AppCard = ({title, description, image, bgColor, slug}) => {
             {description.map((p, index) =>(
                 <p className='my-6 lg:my-8 text-font text-sm md:text-base' key={index}>{p}</p>  
                 ))}
-            <Button text="Request For Demo"/>
+            <Link to='/request-demo'><Button text="Request For Demo"/></Link>
             
         </div>
         {/* right-content */}

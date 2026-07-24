@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation} from "react-router-dom";
 import logo from "../assets/images/logo.png";
 // import dropdown from "../assets/images/dropdown.svg";
 import menuIcon from "../assets/images/menuIcon.png";
@@ -85,7 +85,7 @@ const Navbar = () => {
               </NavLink>
             )
           })}
-          <Button text="REQUEST FOR THE DEMO" size="sm" />
+          <Link to='/request-demo'><Button text="REQUEST FOR THE DEMO" size="sm" /></Link>
         </div>
 
         {/* Mobile Hamburger */}

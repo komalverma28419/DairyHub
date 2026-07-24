@@ -6,7 +6,7 @@ const Button = ({
   variant = "primary",
   size = "md",
   className = "",
-   children,
+  children,
 }) => {
   
   const baseStyle =
@@ -15,7 +15,7 @@ const Button = ({
   const variants = {
     primary: "bg-[#2F75FD] text-white hover:opacity-90 font-semibold text-sm",
     secondary : "bg-[#2C8351] text-white hover:opacity-90 font-semibold",
-    danger: "bg-[#FF5150] text-white hover:bg-red-600 font-medium",
+    danger: "bg-[#FF5150] text-white hover:bg-red-500 font-medium",
     outline: "border border-[#FFC6C6] text-[#FF5150] bg-white hover:bg-[#F04E3E] hover:text-white font-medium"
   }
 
