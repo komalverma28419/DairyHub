@@ -155,7 +155,7 @@ const Navbar = () => {
           </div>
 
           <div className="p-6">
-            <Button text="REQUEST FOR THE DEMO" className="w-full"/>
+            <Link to="/request-demo"><Button text="REQUEST FOR THE DEMO" className="w-full"/></Link>
           </div>
           
         </div>
